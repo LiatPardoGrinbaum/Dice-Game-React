@@ -23,12 +23,12 @@ class RollDice extends React.Component {
     // this.setState({ isRoll: true });
 
     const diceArr = [
-      { id: "dice1", value: 1 },
-      { id: "dice2", value: 2 },
-      { id: "dice3", value: 3 },
-      { id: "dice4", value: 4 },
-      { id: "dice5", value: 5 },
-      { id: "dice6", value: 6 },
+      { id: "dice1 dice", value: 1 },
+      { id: "dice2 dice", value: 2 },
+      { id: "dice3 dice", value: 3 },
+      { id: "dice4 dice", value: 4 },
+      { id: "dice5 dice", value: 5 },
+      { id: "dice6 dice", value: 6 },
     ];
     let random1 = this.getRandomNum();
     let random2 = this.getRandomNum();
@@ -42,8 +42,8 @@ class RollDice extends React.Component {
 
     return (
       <div>
-        <div id={this.state.dice1Id} value={this.state.dice1Value} />
-        <div id={this.state.dice2Id} value={this.state.dice2Value} />
+        <div className={this.state.dice1Id} value={this.state.dice1Value} />
+        <div className={this.state.dice2Id} value={this.state.dice2Value} />
         <button onClick={this.handleClick}>ROLL DICE</button>
       </div>
     );

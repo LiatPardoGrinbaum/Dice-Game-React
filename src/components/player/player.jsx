@@ -4,7 +4,7 @@ import "../main-game/style.css";
 class Player extends React.Component {
   render() {
     return (
-      <div className={this.props.isActive ? "active" : "hidden"}>
+      <div className={`player ${this.props.isActive ? "active" : "hidden"}`}>
         <h1 className="title">Player 1</h1>
         {/*    <h1 className="currentSum">{this.props.isPlayer1 ? this.props.currentSum : 0}</h1> */}
 

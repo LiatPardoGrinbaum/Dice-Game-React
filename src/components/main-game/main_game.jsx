@@ -51,26 +51,25 @@ class Main_Game extends React.Component {
   }
   render() {
     return (
+      <div>
+      <NewGameButton />
       <div className={`main-container ${this.state.gameOver ? "main-container-light" : null}`}>
         <div className={this.state.gameOver ? "gameOver" : null}></div>
-        <NewGameButton />
+       
         <div className="main-inner-container">
           <Player currentSum={this.state.currentSum} isPlayer1={this.state.player1Turn} totScore={this.state.totalScore1} playerTurn="player-turn" isActive={this.state.player1Turn} />
           <div className="diceTools">
             <RollDice getCurrentSumOnClick={this.getCurrentSum} />
-            <div>{`this is${this.state.currentSum}`}</div>
-            <div>{`player 1 is active? ${this.state.player1Turn}`}</div>
-            <div>{`player 2 is active? ${this.state.player2Turn}`}</div>
+ 
+           
             <HoldTurn getNextPlayerOnClick={this.getNextPlayer} isPlayer1={this.state.player1Turn} isPlayer2={this.state.player2Turn} />
           </div>
           <Player currentSum={this.state.currentSum} isPlayer2={this.state.player2Turn} totScore={this.state.totalScore2} playerTurn="player-turn" isActive={this.state.player2Turn} />
         </div>
+      </div>
       </div>
     );
   }
 }
 
 export default Main_Game;
-
-// <HoldTurn />
-// <Player />
