@@ -5,7 +5,7 @@ import Player from "../player/player.jsx";
 
 import RollDice from "../roll-dice/RollDice.jsx";
 import HoldTurn from "../hold-turn/HoldTurn.jsx";
-import GameOver from "../game-over/GameOver.jsx";
+import GameOver from "../game-over/gameOver.jsx";
 import EnterPage from "../enter-page/EnterPage.jsx";
 
 class Main_Game extends React.Component {

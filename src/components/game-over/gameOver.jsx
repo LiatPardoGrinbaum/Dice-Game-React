@@ -2,12 +2,6 @@ import React from "react";
 import "../main-game/style.css";
 
 class GameOver extends React.Component {
-  // whoWins=()=>{
-  //   if (this.props.totalScore1 === 100) {
-  //     let text = "The winner is";
-  //     let text2= "Player 1 "
-  //   }
-  // }
   render() {
     return (
       <div className={this.props.gameOver ? "gameOver" : null}>
