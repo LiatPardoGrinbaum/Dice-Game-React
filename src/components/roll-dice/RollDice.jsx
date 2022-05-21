@@ -17,11 +17,7 @@ class RollDice extends React.Component {
     return Math.floor(Math.random() * length);
   }
 
-  setNewState = () => {};
-
   handleClick = () => {
-    // this.setState({ isRoll: true });
-
     const diceArr = [
       { id: "dice1 dice", value: 1 },
       { id: "dice2 dice", value: 2 },
@@ -37,23 +33,16 @@ class RollDice extends React.Component {
   };
 
   render() {
-    // console.log(this.state.dice1Id);
-    // console.log(this.state.dice1Value);
-
     return (
       <div>
         <div className={this.state.dice1Id} value={this.state.dice1Value} />
         <div className={this.state.dice2Id} value={this.state.dice2Value} />
-        <button onClick={this.handleClick}>ROLL DICE</button>
+        <button className="btn" onClick={this.handleClick}>
+          ROLL DICE
+        </button>
       </div>
     );
   }
 }
 
 export default RollDice;
-
-// class Dice extends React.Component {
-//   render() {
-//     return <div className={this.props.class}></div>;
-//   }
-// }

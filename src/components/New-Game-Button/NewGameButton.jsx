@@ -1,9 +1,16 @@
 import React from "react";
-import "./style.css";
+import "../main-game/style.css";
 
 class NewGameButton extends React.Component {
+  handleClick = () => {
+    this.props.onButtonClick();
+  };
   render() {
-    return <button>New Game</button>;
+    return (
+      <button className={`btn-new-page btn ${this.props.gameOver ? " btn-blink" : null}`} onClick={this.handleClick}>
+        New Game
+      </button>
+    );
   }
 }
 

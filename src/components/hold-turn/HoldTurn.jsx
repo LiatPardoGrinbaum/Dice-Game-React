@@ -24,7 +24,9 @@ class HoldTurn extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={this.handleClick}>HOLD</button>
+        <button className="btn" onClick={this.handleClick}>
+          HOLD
+        </button>
       </div>
     );
   }
